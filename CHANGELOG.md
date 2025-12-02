@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Skip re-encoding downloaded videos with `--skip-reencoding` optional argument (#415)
+- Added Total playlist duration in the Playlist view and Playlist panel. (#435)
 
 ## [3.4.1] - 2025-07-22
 
