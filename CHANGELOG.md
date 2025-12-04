@@ -7,10 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.5.0] - 2025-11-17
+
 ### Added
 
 - Skip re-encoding downloaded videos with `--skip-reencoding` optional argument (#415)
 - Added Total playlist duration in the Playlist view and Playlist panel. (#435)
+- Upgrade to Python 3.14 (and dependencies) and Node.JS 24 (and dependencies) and Debian Trixie (#426)
+- Add `deno` dependency to fix yt-dlp requirement for Youtube (#418)
+- Add impersonation library (#428)
 
 ## [3.4.1] - 2025-07-22
 
