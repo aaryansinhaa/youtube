@@ -2,6 +2,7 @@
 # vim: ai ts=4 sts=4 et sw=4 nu
 
 from http import HTTPStatus
+
 import isodate
 import requests
 from dateutil import parser as dt_parser
@@ -265,7 +266,9 @@ def get_videos_authors_info(videos_ids):
             videos_json = req.json()
             for item in videos_json["items"]:
                 duration_iso = item["contentDetails"]["duration"]
-                duration_seconds = int(isodate.parse_duration(duration_iso).total_seconds())
+                duration_seconds = int(
+                    isodate.parse_duration(duration_iso).total_seconds()
+                )
                 req_items.update(
                     {
                         item["id"]: {

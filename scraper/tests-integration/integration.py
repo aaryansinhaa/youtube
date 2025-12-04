@@ -102,7 +102,7 @@ def test_zim_playlists_file():
         "thumbnailPath",
         "videosCount",
         "mainVideoSlug",
-        "duration"
+        "duration",
     }
 
 
@@ -133,7 +133,7 @@ def test_zim_home_playlists_file():
         "videosCount",
         "publicationDate",
         "videos",
-        "duration"
+        "duration",
     }
     assert set(video_json["playlists"][0]["videos"][0].keys()) == {
         "slug",

@@ -1210,12 +1210,14 @@ class Youtube2Zim:
                 thumbnail_path=get_thumbnail_path(
                     videos[0]["contentDetails"]["videoId"]
                 ),
-                duration=isodate.duration_isoformat(datetime.timedelta(seconds=playlist_duration)),
+                duration=isodate.duration_isoformat(
+                    datetime.timedelta(seconds=playlist_duration)
+                ),
             )
 
         def generate_playlist_preview_object(playlist) -> PlaylistPreview:
             videos = get_videos_list(playlist)
-            playlist_duration = 0  
+            playlist_duration = 0
             for video in videos:
                 video_id = video["contentDetails"]["videoId"]
                 playlist_duration += videos_channels[video_id]["duration_seconds"]
@@ -1228,7 +1230,9 @@ class Youtube2Zim:
                 ),
                 videos_count=len(videos),
                 main_video_slug=get_video_slug(videos[0]),
-                duration = isodate.duration_isoformat(datetime.timedelta(seconds=playlist_duration)),
+                duration=isodate.duration_isoformat(
+                    datetime.timedelta(seconds=playlist_duration)
+                ),
             )
 
         def get_playlist_slug(playlist) -> str:
