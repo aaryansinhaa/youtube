@@ -131,13 +131,15 @@
       "min": 1
     },
     "profile": {
-      "type": "url",
+      "type": "blob",
+      "kind": "image",
       "required": false,
       "title": "Profile Image",
       "description": "Custom profile image. Squared. Will be resized to 100x100px"
     },
     "banner": {
-      "type": "url",
+      "type": "kind",
+      "kind": "image",
       "required": false,
       "title": "Banner Image",
       "description": "Custom banner image. Will be resized to 1060x175px"
